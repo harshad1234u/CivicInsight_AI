@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Santali and Manipuri translation review</title>
+<!-- Editable source of sat-mni-review.pdf. Print: A4 portrait, margins "None"/"Default", scale 100%, background graphics on.
+     Nirmala UI (Windows) is used for Ol Chiki and Meetei Mayek; on other systems install Noto Sans Ol Chiki / Noto Sans Meetei Mayek. -->
+<style>
+  @page { size: A4 portrait; margin: 8mm 11mm; }
+  :root { --ink: #1a2230; --muted: #4a5568; --line: #9aa5b4; --soft: #eef1f5; --accent: #1f3a5f; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: var(--ink); }
+  body { font: 8.2pt/1.26 "Segoe UI", "Nirmala UI", "Noto Sans", "Noto Sans Ol Chiki", "Noto Sans Meetei Mayek", Arial, sans-serif; }
+  .sheet { width: 188mm; margin: 0 auto; }
+  .ol, .mm { font-family: "Nirmala UI", "Noto Sans Ol Chiki", "Noto Sans Meetei Mayek", sans-serif; }
+  header { display: flex; justify-content: space-between; align-items: flex-end; gap: 6mm;
+           border-bottom: 1.6pt solid var(--accent); padding-bottom: 1.6mm; }
+  h1 { font-size: 13.5pt; line-height: 1.15; margin: 0; color: var(--accent); }
+  .sub { margin: .6mm 0 0; font-style: italic; color: var(--muted); }
+  .meta { text-align: right; font-size: 7.6pt; color: var(--muted); white-space: nowrap; }
+  .meta b { color: var(--ink); }
+  p { margin: 1.2mm 0; }
+  h2 { font-size: 9.4pt; margin: 2.2mm 0 .8mm; color: var(--accent); display: flex; justify-content: space-between; align-items: baseline; }
+  h2 small { font-weight: 400; color: var(--muted); font-size: 8pt; }
+  ul.rules { margin: .6mm 0 0; padding-left: 4.2mm; columns: 2; column-gap: 7mm; }
+  ul.rules li { margin: 0 0 .4mm; break-inside: avoid; }
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  th, td { border: .6pt solid var(--line); padding: .8mm 1.4mm; vertical-align: top; text-align: left; }
+  th { background: var(--soft); font-size: 7.6pt; text-transform: uppercase; letter-spacing: .02em; }
+  col.n { width: 5mm; } col.k { width: 37mm; } col.src { width: 62mm; }
+  code { font-family: Consolas, "Cascadia Mono", monospace; font-size: 7pt; }
+  .src { font-weight: 600; }
+  .note { display: block; margin-top: .6mm; font-size: 7.4pt; font-weight: 400; color: var(--muted); }
+  .h1r { height: 10mm; } .h2r { height: 12mm; } .h3r { height: 18mm; }
+  .box { border: .6pt solid var(--line); padding: 1.2mm 2mm; margin-top: 1.4mm; }
+  .cb { display: inline-block; width: 3mm; height: 3mm; border: .7pt solid var(--ink); vertical-align: -.5mm; margin-right: 1.2mm; }
+  .opt { margin: 1mm 0 0; }
+  .fill { display: inline-block; border-bottom: .6pt solid var(--ink); height: 4mm; vertical-align: bottom; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .field { margin: 1.3mm 0 0; display: flex; gap: 1.5mm; align-items: flex-end; }
+  .field span:first-child { white-space: nowrap; }
+  .field .fill { flex: 1; }
+  .consent { margin: 1mm 0 0; display: flex; gap: 1.2mm; }
+  .consent .cb { flex: none; margin-top: .3mm; }
+  footer { margin-top: 2mm; border-top: .6pt solid var(--line); padding-top: 1mm; font-size: 7.2pt; color: var(--muted); }
+  @media screen { body { background: #d9dee5; } .sheet { background: #fff; padding: 9mm 11mm; margin: 6mm auto; width: 210mm; min-height: 297mm; } }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header>
+  <div>
+    <h1>Namma Kavacham AI — Native Language Translation Review</h1>
+    <p class="sub">Community review request for citizen safety and government-service verification interface text.</p>
+  </div>
+  <div class="meta">Sheet version <b>1.0</b><br>Prepared <b>29 Sep 2026</b><br>Returned on: <span class="fill" style="width:20mm"></span></div>
+</header>
+
+<p>Namma Kavacham AI helps citizens check suspicious messages, links and other possible scams, and look up government
+schemes against official sources. A few interface strings are still shown in English to Santali and Manipuri users.
+Earlier machine translations of these strings were not usable, so we are asking qualified speakers to write them.
+Nothing on this sheet has been translated or reviewed yet.</p>
+
+<h2>How to fill in this sheet</h2>
+<ul class="rules">
+  <li>Write in the script named for your section: <b>Ol Chiki</b> for Santali, <b>Meetei Mayek</b> for Manipuri.</li>
+  <li>Keep the meaning of the English, not its word order.</li>
+  <li>Use plain, natural wording that ordinary citizens understand.</li>
+  <li>Keep product names and identifiers exactly as written (for example <b>Namma Kavacham AI</b>).</li>
+  <li>If the English is ambiguous, write your question next to it instead of guessing.</li>
+  <li>Add a correction or short explanation wherever it helps.</li>
+  <li>If you are unsure of a translation, leave it blank until it is clarified.</li>
+  <li>The key (for example <code>safety.startCheck</code>) is for developers; you do not need to translate it.</li>
+</ul>
+
+<h2>1. Santali <small><span class="ol">ᱥᱟᱱᱛᱟᱲᱤ</span> · code <code>sat</code> · script: Ol Chiki</small></h2>
+<table>
+  <colgroup><col class="n"><col class="k"><col class="src"><col></colgroup>
+  <thead><tr><th>#</th><th>Key</th><th>English source</th><th>Santali translation (Ol Chiki)</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><code>civic.aiTranslatedNotice</code></td>
+        <td class="src">Some interface text is AI-translated and may need human review.</td><td class="ans h2r"></td></tr>
+    <tr><td>2</td><td><code>safety.heroTitle</code></td>
+        <td class="src">Understand the risk before you act.<span class="note">Page headline.</span></td><td class="ans h1r"></td></tr>
+    <tr><td>3</td><td><code>safety.startCheck</code></td>
+        <td class="src">Start a check<span class="note">This is a short button label. Translate it naturally for a user starting a safety assessment.</span></td><td class="ans h1r"></td></tr>
+    <tr><td>4</td><td><code>safety.footerText</code></td>
+        <td class="src">Namma Kavacham AI is an advisory risk-assessment tool built with deterministic checks and curated references. It does not replace law enforcement or official helpline services.<span class="note">Keep “Namma Kavacham AI” exactly as written.</span></td><td class="ans h3r"></td></tr>
+  </tbody>
+</table>
+
+<h2>2. Manipuri <small><span class="mm">ꯃꯤꯇꯩꯂꯣꯟ</span> · code <code>mni</code> · script: Meetei Mayek</small></h2>
+<p style="margin-top:0">Row 5 is a page headline; row 6 is a short button label. Please use natural, understandable wording suited to a citizen-facing safety application.</p>
+<table>
+  <colgroup><col class="n"><col class="k"><col class="src"><col></colgroup>
+  <thead><tr><th>#</th><th>Key</th><th>English source</th><th>Manipuri translation (Meetei Mayek)</th></tr></thead>
+  <tbody>
+    <tr><td>5</td><td><code>safety.heroTitle</code></td>
+        <td class="src">Understand the risk before you act.<span class="note">Page headline.</span></td><td class="ans h1r"></td></tr>
+    <tr><td>6</td><td><code>safety.startCheck</code></td>
+        <td class="src">Start a check<span class="note">Short button label.</span></td><td class="ans h1r"></td></tr>
+  </tbody>
+</table>
+
+<div class="box">
+  <b>3. Manipuri — review of an existing navigation label</b>
+  <p style="margin:.8mm 0 0">Current label: <code>civic.navAsk</code> — “Ask / Verify” (the menu item where a citizen asks about a government
+  scheme and has the claim checked against official sources).<br>
+  Current Manipuri text: <span class="mm" style="font-size:10pt">ꯍꯠꯄ / ꯆꯦꯛꯁꯤꯟꯕ</span></p>
+  <p style="margin:.8mm 0 0">Does this wording correctly communicate “Ask / Verify” in this context? Please tick one.</p>
+  <p class="opt"><span class="cb"></span>Keep the existing wording.</p>
+  <div class="field"><span class="cb"></span><span>Recommend a correction:</span><span class="fill"></span></div>
+  <div class="field" style="padding-left:4.2mm"><span>Intended meaning of your correction:</span><span class="fill"></span></div>
+</div>
+
+<h2>4. Translator information and consent <small>one block per translator</small></h2>
+<div class="grid">
+  <div class="box" style="margin-top:0">
+    <div class="field"><span>Translation language:</span><span class="cb"></span>Santali <span class="cb" style="margin-left:2mm"></span>Manipuri</div>
+    <div class="field"><span>Name or preferred attribution:</span><span class="fill"></span></div>
+    <div class="field"><span>Native-speaker or other language expertise (optional):</span></div>
+    <div class="field"><span class="fill"></span></div>
+    <div class="field"><span>Date:</span><span class="fill" style="flex:.6"></span><span>Signature:</span><span class="fill"></span></div>
+    <p class="consent"><span class="cb"></span><span>I have reviewed every string in my assigned section.</span></p>
+    <p class="consent"><span class="cb"></span><span>I consent to my submitted translations being included in the Namma Kavacham AI source repository and distributed with the project, credited as written above.</span></p>
+  </div>
+  <div class="box" style="margin-top:0">
+    <div class="field"><span>Translation language:</span><span class="cb"></span>Santali <span class="cb" style="margin-left:2mm"></span>Manipuri</div>
+    <div class="field"><span>Name or preferred attribution:</span><span class="fill"></span></div>
+    <div class="field"><span>Native-speaker or other language expertise (optional):</span></div>
+    <div class="field"><span class="fill"></span></div>
+    <div class="field"><span>Date:</span><span class="fill" style="flex:.6"></span><span>Signature:</span><span class="fill"></span></div>
+    <p class="consent"><span class="cb"></span><span>I have reviewed every string in my assigned section.</span></p>
+    <p class="consent"><span class="cb"></span><span>I consent to my submitted translations being included in the Namma Kavacham AI source repository and distributed with the project, credited as written above.</span></p>
+  </div>
+</div>
+
+<footer><b>Return to:</b> the project's public repository, https://github.com/harshad1234u/CivicInsight_AI<br>
+Status of every row: <b>pending native translation</b>. Translations are added to the app only with a completed consent box.
+The project will not describe any text as native-reviewed unless the reviewer confirms it here.</footer>
+
+</div>
+</body>
+</html>
